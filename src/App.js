@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
+import Spacer from './Components/Spacer';
 import Header from './Components/Header';
 import DiceRolling from './Components/DiceRolling';
 import Footer from './Components/Footer';
-import { Col, Row } from 'antd';
-import styled from 'styled-components';
 import './App.css';
 
 class App extends Component {
@@ -11,9 +10,8 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <br />
+        <Spacer />
         <DiceRolling />
-        <br />
         <Footer />
       </div>
     );

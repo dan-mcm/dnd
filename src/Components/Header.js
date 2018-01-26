@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Col, Row } from "antd";
 import dnd from "../Images/dnd.png";
 
 const Banner = styled.div`
   color: white;
   width: 100%;
   background-color: darkred;
-  font-size: 30px;
+  font-size: 25px;
   border-bottom: 2px solid grey;
   text-align: center;
   display: inline-block;
@@ -29,7 +28,6 @@ const ImageRight = styled.img`
   padding-right: 25px;
 `;
 
-const Title = styled.h1``;
 class Header extends Component {
   render() {
     return (

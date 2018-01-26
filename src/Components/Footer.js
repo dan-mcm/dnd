@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Col, Row } from "antd";
-import dnd from "../Images/dnd.png";
 
 const Banner = styled.div`
   background-color: darkred;

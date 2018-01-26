@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Dice from './Dice';
-import { Col, Row } from 'antd';
 import styled from 'styled-components';
 
 import D4 from "../Images/D4.png";
@@ -14,6 +13,9 @@ const Line = styled.div`
   text-align: center;
   color: white;
   font-size: large;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
 `
 
 class DiceRolling extends Component {

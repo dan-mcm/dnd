@@ -2,6 +2,9 @@
 
 body {
   font-family: 'Marcellus', cursive;
+  background-image: url("./Images/dragon.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .App {
