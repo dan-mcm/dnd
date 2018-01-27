@@ -41,7 +41,7 @@ class SpellSearch extends Component {
 
   searchByName = () => {
     console.log('Searching for', this.state.spellQuery, '...')
-    for (let i = 0; i < spells.length; i++) {
+    for (let i = 0; i < fifthspells.length; i++) {
       console.log(fifthspells[i].name)
       if (fifthspells[i].name === this.state.spellQuery) {
         console.log('HIT=', fifthspells[i].name);
