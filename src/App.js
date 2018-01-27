@@ -12,9 +12,10 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <SpellSearch />
+
         <Spacer />
         <DiceRolling />
-        <SpellSearch />
         <Footer />
       </div>
     );

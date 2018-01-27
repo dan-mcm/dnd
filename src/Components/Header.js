@@ -11,19 +11,19 @@ const Banner = styled.div`
   text-align: center;
   display: inline-block;
   margin: auto;
-  line-height: 200px;
+  line-height: 100px;
 `;
 
 const ImageLeft = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   float: left;
   padding-left: 25px;
 `;
 
 const ImageRight = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   float: right;
   padding-right: 25px;
 `;
