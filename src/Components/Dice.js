@@ -10,7 +10,7 @@ const Centered = styled.div`
   border: 2px solid grey;
   padding: 20px;
   text-align: center;
-  display:inline-block;
+  display: inline-block;
   margin: 20px;
 `;
 
@@ -25,6 +25,7 @@ const Score = styled.p`
 
 class Dice extends Component {
   state = {
+    numberDice: 0,
     showResults: false,
     diceResults: []
   };
@@ -37,20 +38,33 @@ class Dice extends Component {
       diceResults.push(rollResult);
     }
     this.setState({
+      numberDice: numberOfDice,
       diceResults
     });
+  }
+
+  reRoll(){
+    const diceResults = [];
+    for (let i = 0; i < this.state.numberDice; i++) {
+      const rollResult = Math.floor(Math.random() * this.props.sides + 1);
+      diceResults.push(rollResult);
+    }
+    this.setState({
+      showResults: true,
+      diceResults
+    })
   }
 
   showResults() {
     this.setState({
       showResults: true
-    })
+    });
   }
 
   hideResults() {
     this.setState({
       showResults: false
-    })
+    });
   }
 
   render() {
@@ -58,7 +72,10 @@ class Dice extends Component {
       <Centered>
         <Dimage src={this.props.image} />
         <h2>{this.props.title}</h2>
-        <select onChange={value => this.diceRoll(value)} onClick={() => this.hideResults()}>
+        <select
+          onChange={value => this.diceRoll(value)}
+          onClick={() => this.hideResults()}
+        >
           <option value="-">-</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -71,7 +88,12 @@ class Dice extends Component {
         <br />
         <br />
         {this.state.showResults
-          ? this.state.diceResults.map((result, index) => <Score key={index}>{result}</Score>)
+          ? this.state.diceResults.map((result, index) => (
+              <Score key={index}>{result}</Score>
+            ))
+          : null}
+        {this.state.showResults
+          ? <Button onClick={() => this.reRoll()}>Re-Roll?</Button>
           : null}
       </Centered>
     );
