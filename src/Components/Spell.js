@@ -14,7 +14,6 @@ class Spell extends Component {
   render() {
     return (
       <Container>
-        {console.log(this.props)}
         <h2>{this.props.details[0]}</h2>
         <p>Level: {this.props.details[1]}</p>
         <p>Type: {this.props.details[2]}</p>

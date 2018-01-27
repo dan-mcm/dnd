@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import styled from 'styled-components';
-import { Button } from 'antd';
-import { spells } from '../Data/spells';
-import Spell from './Spell';
+import styled from "styled-components";
+import { Button } from "antd";
+import { spells } from "../Data/spells";
+import Spell from "./Spell";
+import fifthspells from "../Data/5e-spells";
 
 const FullLength = styled.div`
   width: 100%;
@@ -13,7 +14,7 @@ const FullLength = styled.div`
   border-bottom: 2px solid grey;
   padding-top: 25px;
   padding-bottom: 25px;
-`
+`;
 
 const Line = styled.div`
   text-align: center;
@@ -23,7 +24,7 @@ const Line = styled.div`
   padding-top: 15px;
   padding-bottom: 15px;
   margin: auto;
-`
+`;
 
 class SpellSearch extends Component {
   state = {
@@ -35,24 +36,28 @@ class SpellSearch extends Component {
   spellQuery = query => {
     this.setState({
       spellQuery: query
-    })
-  }
+    });
+  };
 
   searchByName = () => {
-      for(let i = 0; i < spells.length; i++){
-        if(spells[i].spell === this.state.spellQuery){
-          let output = [];
-          output.push(spells[i].spell)
-          output.push(spells[i].level)
-          output.push(spells[i].type)
-          output.push(spells[i].time)
-          output.push(spells[i].range)
-          output.push(spells[i].components)
-          output.push(spells[i].duration)
-          output.push(spells[i].description)
-          this.setState({ foundSpell: output, showSpell: true })}
-        }
+    console.log('Searching for', this.state.spellQuery, '...')
+    for (let i = 0; i < spells.length; i++) {
+      console.log(fifthspells[i].name)
+      if (fifthspells[i].name === this.state.spellQuery) {
+        console.log('HIT=', fifthspells[i].name);
+        let output = [];
+        output.push(fifthspells[i].name);
+        output.push(fifthspells[i].level);
+        output.push(fifthspells[i].school);
+        output.push(fifthspells[i].casting_time);
+        output.push(fifthspells[i].range);
+        output.push(fifthspells[i].components);
+        output.push(fifthspells[i].duration);
+        output.push(fifthspells[i].description);
+        this.setState({ foundSpell: output, showSpell: true });
       }
+    }
+  };
 
   render() {
     return (
@@ -85,18 +90,19 @@ class SpellSearch extends Component {
           </select>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           */}
-
-          <select onChange={(event) => this.spellQuery(event.target.value)}>
+          <select onChange={event => this.spellQuery(event.target.value)}>
             <option value="Name">Name</option>
-            {spells.map(spell => <option key={spell.spell} value={spell.spell}>{spell.spell}</option>)}
+            {fifthspells.map(spell => <option key={spell.name} value={spell.name}>{spell.name}</option>)}
+
           </select>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Button onClick={this.searchByName}>Search</Button>
           <br />
           <br />
-          {(this.state.showSpell) ? <Spell details={this.state.foundSpell}/> : null}
+          {this.state.showSpell ? (
+            <Spell details={this.state.foundSpell} />
+          ) : null}
         </Line>
-
       </FullLength>
     );
   }
