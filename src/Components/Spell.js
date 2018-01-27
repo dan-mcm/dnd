@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import styled from 'styled-components'
+import stained from '../Images/stained.jpg';
 
 const Container = styled.div`
   width: 60%;
   text-align: center;
-  color: white;
-  background-color: darkred;
+  color: black;
+
+  background-image: url(${stained});
   border: 2px solid grey;
   padding: 25px;
   margin: auto;
