@@ -64,7 +64,7 @@ class SpellSearch extends Component {
       <FullLength>
         <Line>
           <h2>Spell Search</h2>
-          <p>Search spells using one or more criteria</p>
+          <p>Search for spells</p>
           {/*}
           <select onChange={(event) => console.log(event.target.value)}>
             <option value="Level">Level</option>

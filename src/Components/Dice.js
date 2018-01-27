@@ -49,10 +49,19 @@ class Dice extends Component {
       const rollResult = Math.floor(Math.random() * this.props.sides + 1);
       diceResults.push(rollResult);
     }
+
     this.setState({
       showResults: true,
-      diceResults
+      diceResults,
     })
+  }
+
+  sumResults(){
+    let total = 0;
+    for(let i = 0; i < this.state.diceResults.length; i++){
+      total += this.state.diceResults[i];
+    }
+    return total;
   }
 
   showResults() {
@@ -93,7 +102,7 @@ class Dice extends Component {
             ))
           : null}
         {this.state.showResults
-          ? <Button onClick={() => this.reRoll()}>Re-Roll?</Button>
+          ? <div><p>Total: {this.sumResults()}</p><Button onClick={() => this.reRoll()}>Re-Roll?</Button></div>
           : null}
       </Centered>
     );
