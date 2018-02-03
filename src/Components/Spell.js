@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import stained from '../Images/stained.jpg';
 
 const Container = styled.div`
+  max-width:580px;
   width: 60%;
   text-align: center;
   color: black;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Button } from "antd";
+import { Button } from 'antd';
 
 const Centered = styled.div`
   width: 10%;

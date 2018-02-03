@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Button } from "antd";
-import { spells } from "../Data/spells";
 import Spell from "./Spell";
 import fifthspells from "../Data/5e-spells";
 
@@ -26,6 +25,10 @@ const Line = styled.div`
   margin: auto;
 `;
 
+const Result = styled.div`
+  border-bottom: 2px solid grey;
+  min-height: 300px;
+`
 class SpellSearch extends Component {
   state = {
     spellQuery: false,
@@ -40,11 +43,8 @@ class SpellSearch extends Component {
   };
 
   searchByName = () => {
-    console.log('Searching for', this.state.spellQuery, '...')
     for (let i = 0; i < fifthspells.length; i++) {
-      console.log(fifthspells[i].name)
       if (fifthspells[i].name === this.state.spellQuery) {
-        console.log('HIT=', fifthspells[i].name);
         let output = [];
         output.push(fifthspells[i].name);
         output.push(fifthspells[i].level);
@@ -61,6 +61,7 @@ class SpellSearch extends Component {
 
   render() {
     return (
+      <div>
       <FullLength>
         <Line>
           <h2>Spell Search</h2>
@@ -92,18 +93,28 @@ class SpellSearch extends Component {
           */}
           <select onChange={event => this.spellQuery(event.target.value)}>
             <option value="Name">Name</option>
-            {fifthspells.map(spell => <option key={spell.name} value={spell.name}>{spell.name}</option>)}
-
+            {fifthspells.map(spell => (
+              <option key={spell.name} value={spell.name}>
+                {spell.name}
+              </option>
+            ))}
           </select>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Button onClick={this.searchByName}>Search</Button>
+          <Button type="ghost" onClick={this.searchByName}>Search</Button>
           <br />
           <br />
-          {this.state.showSpell ? (
-            <Spell details={this.state.foundSpell} />
-          ) : null}
         </Line>
-      </FullLength>
+        </FullLength>
+        <Result>
+          {this.state.showSpell ? (
+            <div>
+            <br />
+            <Spell details={this.state.foundSpell} />
+            <br />
+            </div>
+          ) : null}
+        </Result>
+      </div>
     );
   }
 }
