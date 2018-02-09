@@ -12,6 +12,7 @@ const Container = styled.div`
   border: 2px solid grey;
   padding: 25px;
   margin: auto;
+  font-size: large;
 `;
 
 const Score = styled.p`
@@ -25,9 +26,7 @@ class DiceResult extends Component {
         <h2>Roll Results</h2>
         <p>{this.props.type} x {this.props.number}</p>
         {this.props.show
-          ? this.props.results.map((result, index) => (
-              <Score key={index}>{result}</Score>
-            ))
+          ? this.props.results.join(' - ')
           : null}
         {this.props.show ? (
           <div>
