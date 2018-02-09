@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Button } from 'antd';
+import DiceResult from './DiceResult';
 
 const Centered = styled.div`
   width: 10%;
@@ -26,11 +27,11 @@ const Score = styled.p`
 class Dice extends Component {
   state = {
     numberDice: 0,
-    showResults: false,
+    showResults: true,
     diceResults: []
   };
 
-  diceRoll(event) {
+  getResults(event) {
     const numberOfDice = event.target.value;
     const diceResults = [];
     for (let i = 0; i < numberOfDice; i++) {
@@ -43,7 +44,7 @@ class Dice extends Component {
     });
   }
 
-  reRoll(){
+  roll(){
     const diceResults = [];
     for (let i = 0; i < this.state.numberDice; i++) {
       const rollResult = Math.floor(Math.random() * this.props.sides + 1);
@@ -54,26 +55,8 @@ class Dice extends Component {
       showResults: true,
       diceResults,
     })
-  }
 
-  sumResults(){
-    let total = 0;
-    for(let i = 0; i < this.state.diceResults.length; i++){
-      total += this.state.diceResults[i];
-    }
-    return total;
-  }
-
-  showResults() {
-    this.setState({
-      showResults: true
-    });
-  }
-
-  hideResults() {
-    this.setState({
-      showResults: false
-    });
+    this.props.update(this.state.showResults, this.props.title, this.state.numberDice, this.state.diceResults);
   }
 
   render() {
@@ -82,8 +65,7 @@ class Dice extends Component {
         <Dimage src={this.props.image} />
         <h2>{this.props.title}</h2>
         <select
-          onChange={value => this.diceRoll(value)}
-          onClick={() => this.hideResults()}
+          onChange={value => this.getResults(value)}
         >
           <option value="-">-</option>
           <option value="1">1</option>
@@ -99,17 +81,12 @@ class Dice extends Component {
         </select>
         <br />
         <br />
-        <Button onClick={() => this.showResults()}>Roll!</Button>
+
+          <Button onClick={() => {this.roll()}}>Roll?</Button>
+
         <br />
         <br />
-        {this.state.showResults
-          ? this.state.diceResults.map((result, index) => (
-              <Score key={index}>{result}</Score>
-            ))
-          : null}
-        {this.state.showResults
-          ? <div><p>Total: {this.sumResults()}</p><Button onClick={() => this.reRoll()}>Re-Roll?</Button></div>
-          : null}
+
       </Centered>
     );
   }
