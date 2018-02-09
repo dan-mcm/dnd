@@ -6,14 +6,15 @@ A React application designed to aid Dungeon Masters running D&D campaigns.
 
 ### Spell Search Component
 
-- Currently displays results inside Search component, should ideally render results in Spacer component.
-- Additional filters could be implemented - considering alphabetical nature of list not a big priority.
+- Additional filters could be implemented - user input search
 
 ### Dice Component
 
-- On mobile devices images are slightly off - could be optimized for mobile responsiveness.
-- Alignment of divs changes on dice roll results being displayed - could be optimized for better UX - fixed height maybe.
+- Add D100.
+- Add user customizable D field amount e.g. D24.
+- Track history of previously rolled dice.
 - 'Roll All' option to roll multiple dice at the same time.
+- On mobile devices images are slightly off - could be optimized for mobile responsiveness.
 
 ## Potential Future Additions
 

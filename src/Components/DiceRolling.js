@@ -17,6 +17,7 @@ const Line = styled.div`
   background-color: black;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-bottom: 2px solid grey;
 `;
 
 class DiceRolling extends Component {
