@@ -8,6 +8,7 @@ import D8 from "../Images/D8.png";
 import D10 from "../Images/D10.png";
 import D12 from "../Images/D12.png";
 import D20 from "../Images/D20.png";
+import D100 from "../Images/D100.png";
 
 const Centered = styled.div`
   width: 80%;
@@ -95,6 +96,7 @@ class DiceTable extends Component {
           <DiceRow diceImage={D10} sides={10}/>
           <DiceRow diceImage={D12} sides={12}/>
           <DiceRow diceImage={D20} sides={20}/>
+          <DiceRow diceImage={D100} sides={100}/>
         </table>
 
       </Centered>

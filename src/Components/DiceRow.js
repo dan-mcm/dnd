@@ -81,7 +81,7 @@ class DiceRow extends Component {
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
-          </select>
+          </select> x d{this.props.sides}
         </td>
         <td>
         <select onChange={value => this.setModifier(value)} onClick={() => this.hideResults()}>
