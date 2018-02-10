@@ -1,11 +1,12 @@
 # DM Toolkit
 
 A React application designed to aid Dungeon Masters running D&D campaigns.
+Spells JSON modified from:
+https://github.com/tadzik/5e-spells/blob/master/spells.json
 
 ## Current WIP Component Focus:
 
 ### Spell Search Component
-
 - Additional filters could be implemented - user input search
 
 ### Dice Component
@@ -16,7 +17,7 @@ A React application designed to aid Dungeon Masters running D&D campaigns.
 - 'Roll All' option to roll multiple dice at the same time.
 - On mobile devices images are slightly off - could be optimized for mobile responsiveness.
 
-## Potential Future Additions
+### Potential Future Additions
 
 - Skill Search Component -> similar in functionality to the Spell Search.
 - DM Screen Component -> useful basic information reference for D&D campaigns.
