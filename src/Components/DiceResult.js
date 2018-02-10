@@ -15,10 +15,6 @@ const Container = styled.div`
   font-size: large;
 `;
 
-const Score = styled.p`
-  font-size: large;
-`;
-
 class DiceResult extends Component {
   render() {
     return (

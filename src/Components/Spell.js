@@ -12,6 +12,7 @@ const Container = styled.div`
   padding: 25px;
   margin: auto;
   white-space: pre-line;
+  font-size: large;
   h2 {
     text-align: center;
   }

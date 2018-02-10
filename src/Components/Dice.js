@@ -16,8 +16,8 @@ const Centered = styled.div`
 `;
 
 const Dimage = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 `;
 
 const Score = styled.p`
