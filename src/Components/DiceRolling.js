@@ -2,16 +2,20 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import DiceTable from "./DiceTable";
 
-const Line = styled.div`
+const TableCard = styled.div`
   text-align: center;
   color: white;
   font-size: large;
   background-color: black;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid grey;
+  padding: 15px;
+  max-width: 980px;
+  margin: 0 auto;
 `;
 
+const Main = styled.div`
+  background-color: black;
+  border-bottom: 2px solid grey;
+`
 class DiceRolling extends Component {
   constructor(props) {
     super(props);
@@ -38,12 +42,12 @@ class DiceRolling extends Component {
 
   render() {
     return (
-      <div>
-        <Line>
+      <Main>
+        <TableCard>
           <h2>Dice Rolling</h2>
           <DiceTable/>
-        </Line>
-      </div>
+        </TableCard>
+      </Main>
     );
   }
 }
