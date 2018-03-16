@@ -27,5 +27,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "homepage": "http://daniel40392.github.io/dnd"
 }
