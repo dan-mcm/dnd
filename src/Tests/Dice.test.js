@@ -10,6 +10,8 @@ import D12 from "../Images/D12.png";
 import D20 from "../Images/D20.png";
 import D100 from "../Images/D100.png";
 
+//TODO -> inspect snapshot results
+
 it('Renders a D4 Dice component snapshot', () => {
   const tree = renderer.create(<Dice image={D4} title={"D4"}/>);
   expect(tree.toJSON()).toMatchSnapshot();
