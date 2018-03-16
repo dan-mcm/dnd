@@ -82,7 +82,7 @@ class Dice extends Component {
         <br />
         <br />
 
-          <Button onClick={() => {this.roll()}}>Roll?</Button>
+          <button onClick={() => {this.roll()}}>Roll?</button>
 
         <br />
         <br />

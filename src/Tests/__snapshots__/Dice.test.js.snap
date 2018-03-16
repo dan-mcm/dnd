@@ -1,0 +1,575 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders a D4 Dice component snapshot 1`] = `
+<div
+  className="sc-bwzfXH jlBZef"
+>
+  <img
+    className="sc-htpNat hLAwSI"
+    src="D4.png"
+  />
+  <h2>
+    D4
+  </h2>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="-"
+    >
+      -
+    </option>
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+    <option
+      value="5"
+    >
+      5
+    </option>
+    <option
+      value="6"
+    >
+      6
+    </option>
+    <option
+      value="7"
+    >
+      7
+    </option>
+    <option
+      value="8"
+    >
+      8
+    </option>
+    <option
+      value="9"
+    >
+      9
+    </option>
+    <option
+      value="10"
+    >
+      10
+    </option>
+  </select>
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Roll?
+  </button>
+  <br />
+  <br />
+</div>
+`;
+
+exports[`Renders a D6 Dice component snapshot 1`] = `
+<div
+  className="sc-bwzfXH jlBZef"
+>
+  <img
+    className="sc-htpNat hLAwSI"
+    src="D6.png"
+  />
+  <h2>
+    D6
+  </h2>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="-"
+    >
+      -
+    </option>
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+    <option
+      value="5"
+    >
+      5
+    </option>
+    <option
+      value="6"
+    >
+      6
+    </option>
+    <option
+      value="7"
+    >
+      7
+    </option>
+    <option
+      value="8"
+    >
+      8
+    </option>
+    <option
+      value="9"
+    >
+      9
+    </option>
+    <option
+      value="10"
+    >
+      10
+    </option>
+  </select>
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Roll?
+  </button>
+  <br />
+  <br />
+</div>
+`;
+
+exports[`Renders a D8 Dice component snapshot 1`] = `
+<div
+  className="sc-bwzfXH jlBZef"
+>
+  <img
+    className="sc-htpNat hLAwSI"
+    src="D8.png"
+  />
+  <h2>
+    D8
+  </h2>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="-"
+    >
+      -
+    </option>
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+    <option
+      value="5"
+    >
+      5
+    </option>
+    <option
+      value="6"
+    >
+      6
+    </option>
+    <option
+      value="7"
+    >
+      7
+    </option>
+    <option
+      value="8"
+    >
+      8
+    </option>
+    <option
+      value="9"
+    >
+      9
+    </option>
+    <option
+      value="10"
+    >
+      10
+    </option>
+  </select>
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Roll?
+  </button>
+  <br />
+  <br />
+</div>
+`;
+
+exports[`Renders a D10 Dice component snapshot 1`] = `
+<div
+  className="sc-bwzfXH jlBZef"
+>
+  <img
+    className="sc-htpNat hLAwSI"
+    src="D10.png"
+  />
+  <h2>
+    D10
+  </h2>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="-"
+    >
+      -
+    </option>
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+    <option
+      value="5"
+    >
+      5
+    </option>
+    <option
+      value="6"
+    >
+      6
+    </option>
+    <option
+      value="7"
+    >
+      7
+    </option>
+    <option
+      value="8"
+    >
+      8
+    </option>
+    <option
+      value="9"
+    >
+      9
+    </option>
+    <option
+      value="10"
+    >
+      10
+    </option>
+  </select>
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Roll?
+  </button>
+  <br />
+  <br />
+</div>
+`;
+
+exports[`Renders a D12 Dice component snapshot 1`] = `
+<div
+  className="sc-bwzfXH jlBZef"
+>
+  <img
+    className="sc-htpNat hLAwSI"
+    src="D12.png"
+  />
+  <h2>
+    D12
+  </h2>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="-"
+    >
+      -
+    </option>
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+    <option
+      value="5"
+    >
+      5
+    </option>
+    <option
+      value="6"
+    >
+      6
+    </option>
+    <option
+      value="7"
+    >
+      7
+    </option>
+    <option
+      value="8"
+    >
+      8
+    </option>
+    <option
+      value="9"
+    >
+      9
+    </option>
+    <option
+      value="10"
+    >
+      10
+    </option>
+  </select>
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Roll?
+  </button>
+  <br />
+  <br />
+</div>
+`;
+
+exports[`Renders a D20 Dice component snapshot 1`] = `
+<div
+  className="sc-bwzfXH jlBZef"
+>
+  <img
+    className="sc-htpNat hLAwSI"
+    src="D20.png"
+  />
+  <h2>
+    D20
+  </h2>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="-"
+    >
+      -
+    </option>
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+    <option
+      value="5"
+    >
+      5
+    </option>
+    <option
+      value="6"
+    >
+      6
+    </option>
+    <option
+      value="7"
+    >
+      7
+    </option>
+    <option
+      value="8"
+    >
+      8
+    </option>
+    <option
+      value="9"
+    >
+      9
+    </option>
+    <option
+      value="10"
+    >
+      10
+    </option>
+  </select>
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Roll?
+  </button>
+  <br />
+  <br />
+</div>
+`;
+
+exports[`Renders a D100 Dice component snapshot 1`] = `
+<div
+  className="sc-bwzfXH jlBZef"
+>
+  <img
+    className="sc-htpNat hLAwSI"
+    src="D100.png"
+  />
+  <h2>
+    D100
+  </h2>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="-"
+    >
+      -
+    </option>
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+    <option
+      value="5"
+    >
+      5
+    </option>
+    <option
+      value="6"
+    >
+      6
+    </option>
+    <option
+      value="7"
+    >
+      7
+    </option>
+    <option
+      value="8"
+    >
+      8
+    </option>
+    <option
+      value="9"
+    >
+      9
+    </option>
+    <option
+      value="10"
+    >
+      10
+    </option>
+  </select>
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Roll?
+  </button>
+  <br />
+  <br />
+</div>
+`;
