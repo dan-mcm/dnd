@@ -6,16 +6,23 @@ https://github.com/tadzik/5e-spells/blob/master/spells.json
 
 ## Running locally
 
-Clone the repo and from inside of it run the below commands. You will need to have [node](https://nodejs.org/en/) installed 
+Clone the repo and from inside of it run the below commands. You will need to have [node](https://nodejs.org/en/) installed
 
 ```
 npm install
 npm start
 ```
 
-## Testing - Coming Soon
+## Testing
 
-- Planned integration of Jest and CI via Jenkins coming soon...
+Basic [Jest](https://facebook.github.io/jest/) snapshots and component rendering tests are currently setup and integrated via [CircleCI](https://circleci.com/).
+This repo has been setup as protected requiring passing test before branch merges can be made to master.
+
+Evidence of testing can be seen below:
+
+![CircleCI-Branch-Test](/screenshots/circleci-evidence1.png)
+
+![CircleCI-Dashboard](/screenshots/circleci-evidence2.png)
 
 ## Current WIP Component Focus:
 
@@ -36,6 +43,3 @@ npm start
 - DM Screen Component -> useful basic information reference for D&D campaigns.
 - Character Sheet Component -> Online form completion & download.
 - Music Component -> Open sourced music tracks for campaigns - potentially use spotify plugin with playlist.
-
-
-
