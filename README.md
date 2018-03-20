@@ -4,6 +4,9 @@ A React application designed to aid Dungeon Masters running D&D campaigns.
 Spells JSON modified from:
 https://github.com/tadzik/5e-spells/blob/master/spells.json
 
+![Website-1](/screenshots/website-1.png)
+![Website-2](/screenshots/website-2.png)
+
 ## Running locally
 
 Clone the repo and from inside of it run the below commands. You will need to have [node](https://nodejs.org/en/) installed
