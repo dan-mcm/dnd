@@ -1,16 +1,31 @@
 {
-  "main.css": "static/css/main.a084a4b0.css",
-  "main.css.map": "static/css/main.a084a4b0.css.map",
-  "main.js": "static/js/main.e590decb.js",
-  "main.js.map": "static/js/main.e590decb.js.map",
-  "static\\media\\D10.png": "static/media/D10.feb512e4.png",
-  "static\\media\\D100.png": "static/media/D100.92dc28f3.png",
-  "static\\media\\D12.png": "static/media/D12.e553ce6b.png",
-  "static\\media\\D20.png": "static/media/D20.45966914.png",
-  "static\\media\\D4.png": "static/media/D4.07d94c0b.png",
-  "static\\media\\D6.png": "static/media/D6.db632cfc.png",
-  "static\\media\\D8.png": "static/media/D8.d064020a.png",
-  "static\\media\\dnd.png": "static/media/dnd.e3965f1b.png",
-  "static\\media\\dragon.jpg": "static/media/dragon.b1b64ac6.jpg",
-  "static\\media\\stained.jpg": "static/media/stained.633f230e.jpg"
+  "files": {
+    "main.css": "/dnd/static/css/main.318a8c91.chunk.css",
+    "main.js": "/dnd/static/js/main.638ab04c.chunk.js",
+    "main.js.map": "/dnd/static/js/main.638ab04c.chunk.js.map",
+    "runtime-main.js": "/dnd/static/js/runtime-main.d2ca28ae.js",
+    "runtime-main.js.map": "/dnd/static/js/runtime-main.d2ca28ae.js.map",
+    "static/js/2.e2cae9aa.chunk.js": "/dnd/static/js/2.e2cae9aa.chunk.js",
+    "static/js/2.e2cae9aa.chunk.js.map": "/dnd/static/js/2.e2cae9aa.chunk.js.map",
+    "index.html": "/dnd/index.html",
+    "precache-manifest.43458e51fe0c73ea2dfe8fa13e83ca69.js": "/dnd/precache-manifest.43458e51fe0c73ea2dfe8fa13e83ca69.js",
+    "service-worker.js": "/dnd/service-worker.js",
+    "static/css/main.318a8c91.chunk.css.map": "/dnd/static/css/main.318a8c91.chunk.css.map",
+    "static/media/D10.png": "/dnd/static/media/D10.feb512e4.png",
+    "static/media/D100.png": "/dnd/static/media/D100.92dc28f3.png",
+    "static/media/D12.png": "/dnd/static/media/D12.e553ce6b.png",
+    "static/media/D20.png": "/dnd/static/media/D20.45966914.png",
+    "static/media/D4.png": "/dnd/static/media/D4.07d94c0b.png",
+    "static/media/D6.png": "/dnd/static/media/D6.db632cfc.png",
+    "static/media/D8.png": "/dnd/static/media/D8.d064020a.png",
+    "static/media/dnd.png": "/dnd/static/media/dnd.e3965f1b.png",
+    "static/media/App.css": "/dnd/static/media/dragon.b1b64ac6.jpg",
+    "static/media/stained.jpg": "/dnd/static/media/stained.633f230e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2ca28ae.js",
+    "static/js/2.e2cae9aa.chunk.js",
+    "static/css/main.318a8c91.chunk.css",
+    "static/js/main.638ab04c.chunk.js"
+  ]
 }
