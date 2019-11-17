@@ -1,6 +1,8 @@
 # DM Toolkit
 
-[![CircleCI](https://circleci.com/gh/daniel40392/dnd/tree/master.svg?style=svg)](https://circleci.com/gh/daniel40392/dnd/tree/master)
+[![style: styled-components](https://img.shields.io/badge/components-%F0%9F%92%85%20styled_components-9cf.svg?ff69b4)](https://www.styled-components.com/)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![CircleCI](https://circleci.com/gh/dan-mcm/dnd.svg?style=svg)](https://circleci.com/gh/dan-mcm/dnd)
 
 A React application designed to aid Dungeon Masters running D&D campaigns.
 Spells JSON modified from:
